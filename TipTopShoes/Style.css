@@ -1,0 +1,16 @@
+Body{
+    background-color: #FFFFFF;
+}
+#Banner{
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: violet;
+}
+
+/* #logo{
+    margin-right: 0%;
+} */
