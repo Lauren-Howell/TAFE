@@ -1,64 +1,105 @@
-Body{
-    background-color: #FFFFFF;
+body {
+    background-color: #FFF;
     font-family: Tahoma, sans-serif;
+    display: grid;
+    min-height: 100vh; 
+    grid-template-rows: 1fr auto;
 }
-nav{
+
+#main {
+    grid-area: 1fr;
+}
+
+#header, #footer {
+    grid-area: auto;
+}
+
+#nav {
     text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100px;
     display: inline-block;
-    box-shadow: 0 0 10px 10px #d8d8d8;
+    box-shadow: 0 0 10px #b9b9b9;
 }
 
-nav a{
+#nav a:not(#logo) {
     display: inline-block;
     margin-right: 5%;
     padding-top: 40px;
 }
 
-#logo{
+#logo {
     width: 60px;
-    left: 20px;
-    top: 20px;
     position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 img {
     max-width: 100%;
 }
 
-#Latest_Arrivals {
-
-    margin: auto;
-    margin-top: 150px;
-    top: 150px;
-    width: 65%;
-    height: 400px;
-    /* display: inline-block; */
+#Latest_Arrivals, #block{
+    max-width: 90%;
+    margin: 50px auto;
+    height: 350px;
     box-shadow: 0 0 10px 10px #d8d8d8;
-    box-sizing: border-box;
-    padding: 10px;
     text-align: center;
 }
 
-
-#Images div{
-    display: inline-flex;
-    flex-direction: row;
-    /* font-size: 20px; */
-    align-content:space-between;
-   
-
-}
-#Images img{
-    width: 40%;
+#Latest_Arrivals h1, #block h1 {
+    padding: 10px;
+    font-size: 40px;
+    text
 }
 
-#Images{
+#Images {
     display: flex;
     flex-wrap: nowrap;
-    padding: 20 10 10 20
+}
+
+#Images div {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 40px;
+}
+
+
+
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+#contact a, #about a {
+    display: flex;
+    text-align: left;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+#copyright {
+    text-align: center;
+    background-color: #f1f1f1; 
+    position: relative; 
+    margin-top: auto;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+#block {
+    height: 500px;
 }
