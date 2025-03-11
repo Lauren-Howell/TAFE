@@ -122,17 +122,22 @@ a:visited {
     max-width: 90%;
     margin: 50px auto;
     box-shadow: 0 0 10px 10px #d8d8d8;
-    text-align: center;
     display: block;
+}
+#Products h1{
+    text-align: center;
+    padding-top: 30px;
 }
 
 #Products img {
     float: left;
     padding-left: 10%;
+    padding-top: 10%;
 }
 
 #info {
     display: inline-block;
+    padding-left: 50px;
 }
 
 #info h4,#info p,#info ul {
