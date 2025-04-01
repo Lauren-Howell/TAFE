@@ -8,7 +8,7 @@ body {
 .wrapper {
     display: grid;
     grid-template-columns: 250px 1fr;
-    min-height: 90vh;
+    min-height: 65vh;
 }
 
 #nav-button {
@@ -58,7 +58,7 @@ img {
 #Welcome{
     max-width: 90%;
     margin: auto;
-    height: 350px;
+    min-height: 0px;
     box-shadow: 0 0 10px 10px #d8d8d8;
 }
 
@@ -117,7 +117,7 @@ img {
     padding: 20px;
     background-color: #f1f1f1;
     margin-bottom: 0;
-    height:10vh;
+    height:15vh;
 }
 
 #contact a,
