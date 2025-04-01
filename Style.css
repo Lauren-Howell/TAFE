@@ -1,52 +1,51 @@
 body {
     background-color: #FFF;
     font-family: Tahoma, sans-serif;
+    margin: 0px;
+    min-height: 100vh;
+}
+
+.wrapper {
     display: grid;
     grid-template-columns: 250px 1fr;
-    grid-template-rows: 1fr auto; 
-    height: 100vh;
+    min-height: 90vh;
 }
 
-#main {
-    min-height: 1fr;
-}
-
-#header{
-    grid-area: auto;
+#nav-button {
+    display: none;
 }
 
 #header {
     text-align: center;
     height: 100%;
-    display: inline-block;
+    display: inline-flex;
     box-shadow: 0 0 10px #b9b9b9;
-    grid-row: span 2;
-     min-height: 1fr;
+    /* min-height: 1fr; */
 }
 
 #nav {
-    grid-column: 1; 
     display: flex;
     flex-direction: column;
     padding-top: 20px;
-    
+
 }
 
+
 #nav a:not(#logo) {
-    display: block; 
+    display: block;
     margin-bottom: 20px;
-    padding-left: 10px; 
+    padding-left: 10px;
 }
 
 #logo {
-    width: 60px;
-    /* position: absolute; */
+    width: 100px;
     top: 20px;
-    left: 20px;
-   margin: auto;
+    margin-left: 50px;
+    /* margin: auto; */
     display: block;
-    padding-bottom: 20px;
-   
+    padding: 20px;
+    padding-left: 20px;
+
 }
 
 
@@ -54,11 +53,36 @@ img {
     max-width: 100%;
 }
 
-#Latest_Arrivals, #block, #Welcome {
+#Latest_Arrivals,
+#block,
+#Welcome{
     max-width: 90%;
-    margin: 50px auto;
+    margin: auto;
     height: 350px;
     box-shadow: 0 0 10px 10px #d8d8d8;
+}
+
+#returns{
+    max-width: 90%;
+    margin: auto;
+    box-shadow: 0 0 10px 10px #d8d8d8; 
+}
+
+
+#content{
+    margin: auto;
+    max-width: 80%;
+    padding-bottom: 20px;
+}
+
+#content p{
+    text-align: justify;
+    padding:5px;
+}
+
+
+#Latest_Arrivals{
+    margin-top: 0;
 }
 
 #Latest_Arrivals h1 {
@@ -67,7 +91,7 @@ img {
     text-align: center;
 }
 
-#block h1, p, #Welcome{
+#block h1, p:not(#contentP), #Welcome, #returns h1 {
     text-align: center;
     padding: 20px;
 }
@@ -75,13 +99,16 @@ img {
 
 #Images {
     display: flex;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
 }
 
 #Images div {
     display: inline-flex;
     flex-direction: row;
-    padding: 40px;
+    max-width: 15%;
 }
 
 #footer {
@@ -89,10 +116,12 @@ img {
     justify-content: space-evenly;
     padding: 20px;
     background-color: #f1f1f1;
-    grid-column: 2;
+    margin-bottom: 0;
+    height:10vh;
 }
 
-#contact a, #about a {
+#contact a,
+#about a {
     display: flex;
     text-align: left;
 }
@@ -124,7 +153,8 @@ a:visited {
     box-shadow: 0 0 10px 10px #d8d8d8;
     display: block;
 }
-#Products h1{
+
+#Products h1 {
     text-align: center;
     padding-top: 30px;
 }
@@ -140,10 +170,30 @@ a:visited {
     padding-left: 50px;
 }
 
-#info h4,#info p,#info ul {
+#info h4,
+#info p,
+#info ul {
     text-align: left;
 }
 
-#welcome{
+#welcome, #returns {
     vertical-align: middle;
+}
+
+
+
+#Icons {
+    display: inline-flex;
+    align-self: center;
+}
+
+#home {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#query{
+    padding:10px;
 }

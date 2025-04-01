@@ -1,0 +1,43 @@
+@media screen and (max-width: 480px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        min-height: 100vh;
+        margin: auto;
+    }
+    #home {
+        justify-content: space-between;;
+    }
+    #logo{
+        padding:10px;
+        width: 60px;
+    }
+    #nav-button {
+        display: block;
+        align-self: flex-start;
+        margin: 10px;
+        width: 44px;
+        height: 44px;
+        font-size: 32px;;
+    }
+    #header {
+        position: absolute;
+        top:00px;
+        left: -200px;
+        background-color: white;
+        min-height: 100%;
+        width: 200px;
+        transition: left 1s;
+    }
+    #header.open {
+        left: 0px;
+    }
+    #block, #Latest_Arrivals {
+        height: auto;
+        margin: auto;
+    }
+
+    #Latest_Arrivals{
+        margin-top: 0;
+        padding: 0;
+    }
+}
