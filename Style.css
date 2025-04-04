@@ -11,11 +11,11 @@ body {
     min-height: 65vh;
 }
 
-#nav-button {
+.nav-button {
     display: none;
 }
 
-#header {
+.header {
     text-align: center;
     height: 100%;
     display: inline-flex;
@@ -23,21 +23,24 @@ body {
     /* min-height: 1fr; */
 }
 
-#nav {
+.nav {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
 
 }
 
+.nav a.current{
+    color:#f7c902;
+}
 
-#nav a:not(#logo) {
+.nav a:not(.logo) {
     display: block;
     margin-bottom: 20px;
     padding-left: 10px;
 }
 
-#logo {
+.logo {
     width: 100px;
     top: 20px;
     margin-left: 50px;
@@ -53,51 +56,51 @@ img {
     max-width: 100%;
 }
 
-#Latest_Arrivals,
-#block,
-#Welcome{
+.Latest_Arrivals,
+.block,
+.Welcome{
     max-width: 90%;
     margin: auto;
     min-height: 0px;
     box-shadow: 0 0 10px 10px #d8d8d8;
 }
 
-#returns{
+.returns{
     max-width: 90%;
     margin: auto;
     box-shadow: 0 0 10px 10px #d8d8d8; 
 }
 
 
-#content{
+.content{
     margin: auto;
     max-width: 80%;
     padding-bottom: 20px;
 }
 
-#content p{
+.content p{
     text-align: justify;
     padding:5px;
 }
 
 
-#Latest_Arrivals{
+.Latest_Arrivals{
     margin-top: 0;
 }
 
-#Latest_Arrivals h1 {
+.Latest_Arrivals h1 {
     padding: 10px;
     font-size: 40px;
     text-align: center;
 }
 
-#block h1, p:not(#contentP), #Welcome, #returns h1 {
+.block h1, p:not(.contentP), .Welcome, .returns h1 {
     text-align: center;
     padding: 20px;
 }
 
 
-#Images {
+.Images {
     display: flex;
     /* flex-wrap: nowrap; */
     flex-wrap: wrap;
@@ -105,13 +108,13 @@ img {
 
 }
 
-#Images div {
+.Images div {
     display: inline-flex;
     flex-direction: row;
     max-width: 15%;
 }
 
-#footer {
+.footer {
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
@@ -120,17 +123,17 @@ img {
     height:15vh;
 }
 
-#contact a,
-#about a {
+.contact a,
+.about a {
     display: flex;
     text-align: left;
 }
 
-#contact h2 {
+.contact h2 {
     text-align: center;
 }
 
-#copyright {
+.copyright {
     text-align: center;
     background-color: #f1f1f1;
     position: relative;
@@ -147,53 +150,53 @@ a:visited {
     text-decoration: none;
 }
 
-#Products {
+.Products {
     max-width: 90%;
     margin: 50px auto;
     box-shadow: 0 0 10px 10px #d8d8d8;
     display: block;
 }
 
-#Products h1 {
+.Products h1 {
     text-align: center;
     padding-top: 30px;
 }
 
-#Products img {
+.Products img {
     float: left;
     padding-left: 10%;
     padding-top: 10%;
 }
 
-#info {
+.info {
     display: inline-block;
     padding-left: 50px;
 }
 
-#info h4,
-#info p,
-#info ul {
+.info h4,
+.info p,
+.info ul {
     text-align: left;
 }
 
-#welcome, #returns {
+.welcome, .returns {
     vertical-align: middle;
 }
 
 
 
-#Icons {
+.Icons {
     display: inline-flex;
     align-self: center;
 }
 
-#home {
+.home {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: flex-start;
 }
 
-#query{
+.query{
     padding:10px;
 }
