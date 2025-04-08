@@ -2,8 +2,8 @@
 // function definition for onLoad
 function onLoad() {
     // reference to nav button
-    const btn = document.querySelector("#nav-button")
-    const nav = document.querySelector("#header")
+    const btn = document.querySelector(".nav-button")
+    const nav = document.querySelector(".header")
     // add a listener to btn for click
     btn.addEventListener( "click" , function() {
         if( nav.classList.contains("open") ) {

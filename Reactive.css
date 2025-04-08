@@ -4,40 +4,60 @@
         min-height: 100vh;
         margin: auto;
     }
-    #home {
-        justify-content: space-between;;
+
+    .home {
+        justify-content: space-between;
+        ;
     }
-    #logo{
-        padding:10px;
+
+    .logo {
+        padding: 10px;
         width: 60px;
     }
-    #nav-button {
+
+    .nav-button {
         display: block;
         align-self: flex-start;
         margin: 10px;
         width: 44px;
         height: 44px;
-        font-size: 32px;;
+        font-size: 32px;
+        ;
     }
-    #header {
+
+    .header {
         position: absolute;
-        top:00px;
+        top: 00px;
         left: -200px;
         background-color: white;
         min-height: 100%;
         width: 200px;
         transition: left 1s;
     }
-    #header.open {
+
+    .header.open {
         left: 0px;
     }
-    #block, #Latest_Arrivals {
+
+    .block,
+    .Latest_Arrivals {
         height: auto;
         margin: auto;
     }
 
-    #Latest_Arrivals{
+    .Latest_Arrivals {
         margin-top: 0;
         padding: 0;
+    }
+
+    .Images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Images div {
+        display: inline-flex;
+        flex-direction: row;
+        max-width: 100%;
     }
 }
